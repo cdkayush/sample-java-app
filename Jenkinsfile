@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo "This stage will run tests."'
+                sh './mvnw test'
             }
         }
     }
